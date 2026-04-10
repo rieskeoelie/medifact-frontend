@@ -1514,7 +1514,7 @@ async function openBillingPortal() {
 const currentProfile = 'medical';
 let currentAnalysis = null;
 let analysisRunning = false;
-let backendUrl = localStorage.getItem('medifactBackendUrl') || 'https://medifact-api-production.up.railway.app';
+let backendUrl = localStorage.getItem('medifactBackendUrl') || 'https://api.medifact.eu';
 
 const PROFILES = {
   medical: {label:'Medical', v:15, r:70, c:15, s:'≥2 (GCP)', q:8, i:5, a:85, p:2,
