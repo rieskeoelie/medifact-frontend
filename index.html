@@ -1145,6 +1145,9 @@ function setSession(token, user) {
   _token = token; _user = user;
   localStorage.setItem('mf_token', token);
   localStorage.setItem('mf_user', JSON.stringify(user));
+  localStorage.setItem('medifactAuthToken', token);
+  localStorage.setItem('medifactBackendUrl', 'https://powerful-creation-production.up.railway.app');
+  window.location.href = '/app.html';
 }
 function doLogout() {
   _token = null; _user = null;
